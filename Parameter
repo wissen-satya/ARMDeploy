@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/65911ece-b772-4e16-ab25-fc95982846dc/resourceGroups/POC_DevOps_RG/providers/Microsoft.KeyVault/vaults/grp1keyvault"
+                },
+                "secretName": "grp1key"
+            }
+        }
+    }
+}
